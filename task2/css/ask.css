@@ -1,0 +1,34 @@
+.horn {
+	display:inline-block;
+	background-image:url("../images/horn.png");
+	width:2.25rem;
+	height:1.6rem;
+	padding-right:1rem;
+	background-repeat:no-repeat;
+	vertical-align:middle;
+}
+
+.date {
+	color:#b0b0b0;
+	font-size:1.5rem;
+}
+
+section {
+	padding:5rem 0 1.5rem 0;
+	margin:0  3.5rem;
+	border-bottom:1px #c1c1c1 solid;
+}
+
+section p {
+	color:#868686;
+	font-size:1.625rem;
+	line-height:2.4rem;
+}
+
+section  h2 {
+	font-weight:normal;
+	color:#4e4e4e;
+	font-size:2.1rem;
+	line-height:3.4rem;
+}
+

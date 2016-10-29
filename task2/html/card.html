@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang=zh-cn>
+<head>
+	<meta charset="utf-8">
+	<title>card</title>
+	<meta name="viewport" content="width=device-width, intial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/card.css">
+</head>
+<body>
+	<header>
+		<p>
+		<span class="goback"></span>查看身份
+		<a href="home.html"><span class="close"></span></a>
+		</p>
+	</header>
+	
+	<div id="main">
+	
+		<div id="back" class="card">
+			<div class="avatar_1"></div>
+		</div>
+		
+		<div id="front" class="card">
+			<div class="avatar_2"></div>
+			<p class="role"></p>
+			<p class="word"></p>
+			<div class="tip">
+				<p>想办法猜到人的词，同时还要注意不要暴露自己哦!</p>
+			</div>
+		</div>
+		
+		<div class="number_card"></div>
+		<div class="btn"></div>
+	</div>
+<script>
+	 var goback=document.querySelector(".goback");
+	 goback.onclick=function(){ window.history.back();}
+</script>
+<script src="../js/card.js"></script>
+</body>
+</html>

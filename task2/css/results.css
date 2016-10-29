@@ -1,0 +1,94 @@
+
+/*main*/
+/*results_box */
+.results_box {
+	background-color:#29bde0;
+	color:white;
+	font-size:1.625rem;
+	line-height:2.5625rem;
+	padding:1.5rem 4.75rem 1rem 4.75rem;
+}
+.win_box {
+	text-align:center;
+}
+.results_box span.left {
+	padding-right:2rem;
+}
+.good {
+	color:#ffc865;
+	font-size:2.0625rem;
+	font-weight:bold;
+	padding-bottom:3rem;
+}
+p {
+	clear:both;
+}
+/*row*/
+.row {
+	padding:0 4.75rem 1.5625rem 4.75rem;
+	border-top:1px solid #dddddd;
+	border-bottom:1px solid #dddddd;
+}
+h2 {
+	font-size:1.875rem;
+	font-weight:normal;
+	color:#515151;
+	line-height:2.70rem;
+}
+.row p{
+	color:#a6a6a6;
+	font-size:1.625rem;
+	line-height:2rem;
+}
+.time {
+	color:#c7c7c7;
+	font-size:1.25rem;
+}
+
+/*footer*/
+footer {
+	padding:1.5rem 0;
+	width:100%;
+	position:fixed;
+	bottom:0;
+	background-color:rgba(41,189,224,0.48);
+	max-width: 640px;
+}
+footer div{
+	width:50%;
+	float:left;
+}
+#play_againt ,#share {
+	width:85%;
+	margin:0 7.5%;
+	border-radius:0.625rem;
+	color:white;
+	text-align:center;
+	line-height:5.375rem;
+	font-size:2.5rem;
+}
+#play_againt {
+	background-color:#f66f6f;
+}
+#share {
+	background-color:#fbb435;
+}
+
+
+/*小图标*/
+.win {
+	display:inline-block;
+	background-size:contain;
+	vertical-align:middle;
+	background-image:url(../images/win.png);
+	width:21.875rem;
+	height:12.8125rem;
+}
+
+/*媒体查询*/
+@media screen and (max-width: 480px) {
+    html {
+        font-size:60%;
+    }
+}
+

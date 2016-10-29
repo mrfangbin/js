@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang=zh-cn>
+<head>
+	<meta charset="utf-8">
+	<title>ghostgame_setting</title>
+	<meta name="viewport" content="width=device-width, intial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/ghostgame_setting.css">
+</head>
+<body>
+<header>
+	<p>
+	<a href="home.html"><span class="goback"></span></a>参数设置<a href="help.html"><span class="gohelp"></span></a>
+	</p>
+</header>
+<div id="main">
+	<form action="card.html" method="get">
+	<section>
+		<p><label for="ghost">幽灵人数</label><input type="number" name="ghost" id="ghost" value="1"><span>人</span></p>
+		<p><label for="man">平民人数</label><input type="number" name="man" id="man"><span>人</span></p>
+		<p id="player_setting">点击设置<span class='pen'></span></p>
+	</section>
+	
+	<section>
+		<p><input type="text" name="word" placeholder="平民词组" required ></p>
+		<p><input type="text" name="under_word" placeholder="幽灵词组" required></p>
+	</section>
+
+	<section>
+		<p class="player_number">玩家人数<span class="number"></span>人</p>
+		<p class="range_box"><span class="down "></span><input type="range" max="25" min="6" step="1"><span class="up"></span></p>
+	</section>
+	
+	<button type="submit">去发牌</button>
+
+	</form>
+</div>
+
+<script src="../js/ghostgame_setting.js"></script>
+
+</body>
+</html>

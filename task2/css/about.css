@@ -1,0 +1,40 @@
+#main , footer {
+	color:#868686;
+	font-size:1.625rem;
+	line-height:2.4rem;
+}
+#main h2 {
+	font-weight:normal;
+	font-size:2.25rem;
+	color:#4e4e4e;
+	line-height:5rem;
+}
+section {
+	margin:0 3.75rem;
+	border-bottom:1px  #c1c1c1 solid;
+}
+section:first-child {
+	padding:4.25rem 0 5.6rem 0;
+}
+.number {
+	font-size:1.625rem;
+}
+.next {
+	display:inline-block;
+	background-image:url("../images/next.png");
+	width:1.5rem;
+	height:2.5rem;
+	vertical-align:middle;
+}
+
+
+footer div {
+	float:left;
+	width:50%;
+	text-align:center;
+	padding-top:6.25rem;
+}
+footer div img {
+	width:7.5625rem;
+	height:7.5625rem;
+}

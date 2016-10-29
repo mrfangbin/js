@@ -1,0 +1,124 @@
+#main {
+	padding:8rem 4rem 0 5.25rem;
+}
+#main p {
+	line-height:3.875rem;
+	color:#595959;
+	font-size:2.125rem;
+	margin-bottom:3.125rem;
+}
+.btn {
+	width:8.75rem;
+	border:1px solid #dbd8d8;
+	border-radius:0.5rem;
+	overflow:hidden;
+}
+.btn span {
+	display:block;
+	float:left;
+	text-align:center;
+	font-size:1.32rem;
+	width:50%;
+	color:#959595;
+	cursor:pointer;
+}
+.btn span.checked {
+	color:white;
+	background-color:#fbb435;
+}
+.horn ,.horn_close {
+	display:inline-block;
+	width:2.25rem;
+	height:1.6rem;
+	padding-right:1rem;
+	background-repeat:no-repeat;
+	vertical-align:middle;
+	background-size:contain;
+}
+.horn {
+	background-image:url("../images/horn.png");
+}
+.horn_close {
+	background-image:url("../images/horn_close.png");
+}
+
+
+/*range*/
+input[type="range"]{
+	cursor:pointer; 
+	width:26rem;
+	vertical-align:middle; /*主要针对chrome，因为chrome默认range垂直对齐不是middle。*/
+}
+/*moz*/
+
+input[type="range"]::-moz-range-thumb{  
+	height:1.375rem;
+	width:1.375rem;
+	border:none;
+	border-radius:0.6875rem;  
+	background-color:#fbb435;
+}  
+
+input[type="range"]::-moz-range-track{  
+	height:0.375rem;
+	border-radius:1px;
+	background-color:#fedda2; 
+} 
+input[type=range]::-moz-range-progress {
+	height:0.375rem;
+	background-color:#fbb435; 
+}
+/*webkit*/
+
+input[type="range"]{
+	-webkit-appearance:none;  
+}
+input[type="range"]:focus {
+	outline:none;
+}
+
+input[type="range"]::-webkit-slider-thumb{  
+	-webkit-appearance:none;  /*必须使用两次，对input和滑块各用一次*/
+	height:1.375rem;
+	margin-top:-0.5rem; /*默认不是居中的，需要手动调整*/
+	width:1.375rem;
+	border:none;
+	border-radius:0.6875rem;  
+	background-color:#fbb435;
+}  
+
+input[type="range"]::-webkit-slider-runnable-track{  
+	height:0.375rem;
+	border-radius:1px;
+	background-color:#fbb435; 
+}  
+
+/*ms*/
+
+input[type="range"]{
+	height:1.6rem;
+}
+input[type=range]::-ms-thumb{ 
+	margin-top:0;
+	height:22px; /*用rem时显示异常*/
+	width:22px;
+	border-radius:0.6875rem;  
+	border:none;
+	background-color:#fbb435;
+} 
+
+input[type=range]::-ms-track{ 
+	height:6px;
+	border:none;
+	color:transparent;/*对ie有必要取消分隔符*/
+}  
+input[type=range]::-ms-fill-lower{ 
+	border-radius:2px;
+	background-color:#fbb435; 
+}  
+input[type=range]::-ms-fill-upper{  
+	background-color:#fedda2; 
+	border-radius:2px;
+}  
+
+

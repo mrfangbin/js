@@ -1,0 +1,167 @@
+
+/*main*/
+.main {
+	background-color:#29bde0;
+}
+
+/*tips*/
+#tips_area {
+	height:8.625rem;
+}
+#tips_box {
+	background-color:#b9e9f5;
+	line-height:5.125rem;
+	font-size:1.625rem;
+	color:#464646;
+	padding-left:2.875rem;
+	overflow:hidden;
+	position:relative;
+}
+#tips_box>p {
+	color:#464646;
+	font-size:1.625rem;
+}
+#play {
+	width:3.250rem;
+	height:3.250rem;
+	border-radius:1.625rem;
+	padding:1px;
+	background-color:#fbb435;
+	position:absolute;
+	right:1.438rem;
+	top:0.938rem;
+}
+#ispaly{
+	width:0px;
+	height:0px;
+	border:1.625rem transparent solid;
+	border-left-color:white;
+	border-width:0.938rem 1.625rem;
+	margin:0.688rem 0  0 0.938rem;
+}
+#ispaused{
+	display:none;
+	width:1.875rem;
+	height:1.875rem;
+	background-color:white;
+	margin:0.688rem;
+}
+#tips_tri {
+	width:0px;
+	height:0px;
+	border: 0.813rem transparent solid;
+	border-top-color:#b9e9f5;
+	margin-left:4.375rem;
+}
+#tips_area>p {
+	color:white;
+	font-size:1.5rem;
+	padding-left:4.375rem;
+}
+/*vote*/
+#vote_area {
+	overflow:hidden;
+	text-align:center;
+}
+.vote_box {
+	margin:6%;
+	margin-bottom:0;
+	padding-bottom:6%;
+	width:21%;
+	float:left;
+	position:relative;
+}
+.vote_occ {
+	border:0.313rem  white solid;
+	border-bottom:none;
+	background:#f5c97b;
+	padding:22.4% 0;
+	font-size:1.875rem;
+	color:#565656;
+}
+.vote_number {
+	border:0.313rem  white solid;
+	border-top:none;
+	background-color:#83b09a;
+	line-height:1.688rem;
+	font-size:1.438rem;
+	color:white;
+}
+
+/*tools*/
+#tools_box{
+	display:none;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	text-align:left;
+	font-size:0;
+}
+.vote_box:hover #tools_box , #tools_box:hover {
+	display:block;
+}
+.tools {
+	width:1.875rem;
+	height:1.875rem;
+	background-color:white;
+	margin:0.125rem;
+	float:left;
+	text-align:center;
+	line-height:1.875rem;
+}
+.tools img {
+	vertical-align:middle;
+}
+
+/*footer*/
+footer {
+	background-color:#29bde0;
+	border-top:2px white solid;
+	width:100%;
+	min-width:320px;
+	max-width:640px;
+	height:11.875rem;
+	margin:0 auto;
+	position:fixed;
+	bottom:0px;
+}
+#vote_btn {
+	width:80%;
+	margin:2.625rem auto;
+	background-color:#fbb435;
+	text-align:center;
+	line-height:5.438rem;
+	font-size:2.5rem;
+	color:white;
+}
+
+
+
+/*小图标*/
+.hamburg ,.kill ,.view ,.lock , .healing {
+	display:inline-block;
+	background-size:contain;
+	background-position:50% 50%;
+	vertical-align:middle;
+}
+
+.kill {
+	background-image:url("../images/kill.png");
+	padding:12%;
+	margin-left:1%;
+}
+.view {
+	background-image:url("../images/view.png");
+	padding:12%;
+	margin-left:1%;
+}
+.lock {
+	background-image:url("../images/lock.png");
+	padding:12%;
+	margin-left:1%;
+}
+.healing {
+	background-image:url("../images/healing.png");
+	padding:12%;
+	margin-left:1%;
+}

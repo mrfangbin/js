@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang=zh-cn>
+<head>
+	<meta charset="utf-8">
+	<title>killgame_setting</title>
+	<meta name="viewport" content="width=device-width, intial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/killgame_setting.css">
+</head>
+<body>
+<header>
+	<p>
+	<a href="home.html"><span class="goback"></span></a>参数设置<a href="help.html"><span class="gohelp"></span></a>
+	</p>
+</header>
+<div id="main">
+	<form action="card.html" method="get">
+	<section class="player_box">
+		<div class="table">
+			<div class="cell">玩<br>家<br>配<br>比</div>
+			<div class="cell">
+				<ul>
+					<li><label for="police">警&nbsp;&nbsp;&nbsp;&nbsp;察</label><input type="number" name="police" id="police"><span>人</span></li>
+					<li><label for="doctor">医&nbsp;&nbsp;&nbsp;&nbsp;生</label><input type="number" name="doctor" id="doctor"><span>人</span></li>
+					<li><label for="sniper">杀&nbsp;&nbsp;&nbsp;&nbsp;手</label><input type="number" name="sniper" id="sniper"><span>人</span></li>
+					<li><label for="killer">狙击手</label><input type="number" name="killer" id="killer"><span>人</span></li>
+					<li><label for="man">平&nbsp;&nbsp;&nbsp;&nbsp;民</label><input type="number" name="man" id="man"><span>人</span></li>
+				</ul>
+				<p></p>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<p>玩家人数<span class="number"></span>人</p>
+		<p class="range_box"><span class="down "></span><input type="range" max="25" min="6" step="1"><span class="up"></span></p>
+	</section>
+	
+	<button type="submit">去发牌</button>
+	</form>
+</div>
+
+<script src="../js/killgame_setting.js"></script>
+
+</body>
+</html>
