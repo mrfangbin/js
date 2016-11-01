@@ -78,8 +78,8 @@ function getForm(){
 		total : total.value ,
 		police : player[0].value ,
 		doctor : player[1].value ,
-		sniper : player[2].value ,
-		killer : player[3].value ,
+		killer : player[2].value ,
+		sniper : player[3].value ,
 		man : player[4].value
 	};
 	myform=JSON.stringify(myform);

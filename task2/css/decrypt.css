@@ -1,0 +1,110 @@
+#main{
+	background-color:#29bde0;
+	padding:1px;
+	color:white;
+	min-height:65rem;
+	position:relative;
+}
+
+
+.photo {
+	height:15rem;
+	width:15rem;
+	border-radius:7.5rem;
+	margin:3.75rem auto 3.75rem auto;
+	border:0.5rem white solid;
+	background-color:#fbb435;
+	background-size:contain;
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+	background-image:url("../images/cry.png");
+}
+
+/*音乐按钮*/
+#music_btn {
+	width:3.75rem;
+	height:3.75rem;
+	border-radius:1.875rem;
+	border:2px white solid;
+	position:absolute;
+	top:2rem;
+	right:3.3rem;
+	cursor:pointer;
+}
+.right_tri {
+	width:0;
+	height:0;
+	border:transparent solid;
+	border-width:0.75rem 1.375rem;
+	border-left-color:white;
+	margin:1.125rem 0 0 1.2rem;	
+}
+.stop {
+	width:0.5rem;
+	height:1.5rem;
+	border:white solid;
+	border-width:0 0.5rem;
+	margin:1.125rem 0 0 1.2rem;
+}
+
+/*内容区*/
+.scroll {
+	overflow:hidden;
+	padding:0 2rem 0 6rem;
+}
+.result {
+	width:100%;
+	padding-right:50rem;
+	height:10rem;
+	font-size:1.75rem;
+	line-height:2.375rem;
+	overflow-y:scroll;
+}
+
+
+/*步骤区*/
+.process {
+	border-top:1px solid #87daee;
+	width:100%;
+	padding-top:2rem;
+	position:absolute;
+	bottom:0;
+}
+.step {
+	width:26rem;
+	height:3.75rem;
+	font-size:2.125rem;
+	line-height:3.75rem;
+	margin:auto;
+	border-radius:0.5rem;
+	background-color:#24a7c6;
+	text-align:center;
+}
+
+.bottom_tri_1, .bottom_tri_2{
+	width:0;
+	height:0;
+	border:solid transparent;
+	border-top-color:#fbb435;
+	margin:auto;
+}
+.bottom_tri_1 {
+	border-width:2.25rem 3rem ;
+}
+.bottom_tri_2 {
+	border-width:2.75rem 3.5rem;
+	margin:-3.25rem auto -2rem auto;
+}
+	
+
+.btn {
+	width:30.75rem;
+	height:5.375rem;
+	line-height:5.375rem;
+	font-size:2.5rem;
+	background-color:#fbb435;
+	text-align:center;
+	margin:auto;
+	margin-bottom:3.75rem;
+	cursor:pointer;
+}

@@ -2,7 +2,7 @@
 <html lang=zh-cn>
 <head>
 	<meta charset="utf-8">
-	<title>task06_vote</title>
+	<title>vote</title>
 	<meta name="viewport" content="width=device-width, intial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
 	<link rel="stylesheet" href="../css/public.css">
 	<link rel="stylesheet" href="../css/vote.css">
@@ -10,17 +10,18 @@
 <body>
 	<header>
 		<p>
-			<a href=""><span class="hamburg"></span></a>
-			投票
-			<a href=""><span class="close"></span></a>
+			<span class="hamburg"></span>
+			<p>投票</p>
+			<span class="close"></span>
 		</p>
 	</header>
-	<div class="main">
+	<div id="main">
+	
 		<div id="tips_area">
+			<div id="table"><div id="row">
 			<div id="tips_box">
-				<div id="play" onclick="playMusic()">
-					<div id="ispaly" ></div>
-					<div id="ispaused"></div>
+				<div id="play">
+					<div id="play_icon" class="right_tri" ></div>
 				</div>
 				<audio id="song" >
 					<source src="../music/feed.mp3" type="audio/mpeg">
@@ -28,139 +29,28 @@
 				</audio>	
 				<p>发言讨论结束，大家请投票</p>
 			</div>
+			</div></div>
 			<div id="tips_tri"></div>
 			<p>点击得票数最多人的头像</p>
 		</div>
+		
 		<div id="vote_area">
 			<div class="vote_box">
-				<div class="vote_occ">水民</div>
-				<div class="vote_number">1号</div>
-					<div id="tools_box">
-						<span class="kill"></span>
-						<span class="view"></span>
-						<span class="lock"></span>
-						<span class="healing"></span>
-					</div>
-			</div>
-			<div class="vote_box">
-				<div class="vote_occ">水民</div>
-				<div class="vote_number">2号</div>
-					<div id="tools_box">
-						<span class="kill"></span>
-						<span class="view"></span>
-						<span class="lock"></span>
-						<span class="healing"></span>
-					</div>
-			</div>
-			<div class="vote_box">
-				<div class="vote_occ">警察</div>
-				<div class="vote_number">3号</div>
-					<div id="tools_box">
-						<span class="kill"></span>
-						<span class="view"></span>
-						<span class="lock"></span>
-						<span class="healing"></span>
-					</div>
-			</div>
-			<div class="vote_box">
-				<div class="vote_occ">法官</div>
-				<div class="vote_number">4号</div>
-					<div id="tools_box">
-						<span class="kill"></span>
-						<span class="view"></span>
-						<span class="lock"></span>
-						<span class="healing"></span>
-					</div>
-			</div>
-			<div class="vote_box">
-				<div class="vote_occ">狙击手</div>
-				<div class="vote_number">5号</div>
-					<div id="tools_box">
-						<span class="kill"></span>
-						<span class="view"></span>
-						<span class="lock"></span>
-						<span class="healing"></span>
-					</div>
-			</div>
-			<div class="vote_box">
-				<div class="vote_occ">医生</div>
-				<div class="vote_number">6号</div>
-					<div id="tools_box">
-						<span class="kill"></span>
-						<span class="view"></span>
-						<span class="lock"></span>
-						<span class="healing"></span>
-					</div>
-			</div>
-			<div class="vote_box">
-				<div class="vote_occ">杀手</div>
-				<div class="vote_number">7号</div>
-					<div id="tools_box">
-						<span class="kill"></span>
-						<span class="view"></span>
-						<span class="lock"></span>
-						<span class="healing"></span>
-					</div>
-			</div>
-			<div class="vote_box">
-				<div class="vote_occ">水民</div>
-				<div class="vote_number">8号</div>
-					<div id="tools_box">
-						<span class="kill"></span>
-						<span class="view"></span>
-						<span class="lock"></span>
-						<span class="healing"></span>
-					</div>
-			</div>
-			<div class="vote_box">
-				<div class="vote_occ">水民</div>
-				<div class="vote_number">9号</div>
-					<div id="tools_box">
-						<span class="kill"></span>
-						<span class="view"></span>
-						<span class="lock"></span>
-						<span class="healing"></span>
-					</div>
-			</div>
-			<div class="vote_box">
-				<div class="vote_occ">水民</div>
-				<div class="vote_number">10号</div>
-					<div id="tools_box">
-						<span class="kill"></span>
-						<span class="view"></span>
-						<span class="lock"></span>
-						<span class="healing"></span>
-					</div>
-			</div>
-			<div class="vote_box">
-				<div class="vote_occ"></div>
-				<div class="vote_number"></div>
-			</div>
-			<div class="vote_box">
-				<div class="vote_occ"></div>
-				<div class="vote_number"></div>
-			</div>	
+				<div class="vote_occ">roal</div>
+				<div class="vote_number">number</div>
+				<div class="tools_box">
+					<span class="kill"></span>
+					<span class="view"></span>
+					<span class="lock"></span>
+					<span class="healing"></span>
+				</div>
+			</div>		
 		</div>
 	</div>
 
 	<footer>
 		<div id="vote_btn">投死</div>
 	</footer>
-	<script>
-			var ispaly=document.getElementById("ispaly");
-			var ispaused=document.getElementById("ispaused");
-		function playMusic(){
-			var song=document.getElementById("song");
-			if(song.paused){
-				song.play();
-				ispaly.style.display="none";
-				ispaused.style.display="block";
-			}else{
-				song.pause();
-				ispaly.style.display="block";
-				ispaused.style.display="none";
-			}		
-		}
-	</script>
+	<script src="../js/vote.js"></script>
 </body>
 </html>

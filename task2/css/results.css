@@ -1,5 +1,9 @@
 
 /*main*/
+#main{
+	padding-bottom:7rem;
+}
+
 /*results_box */
 .results_box {
 	background-color:#29bde0;
@@ -16,6 +20,7 @@
 }
 .good {
 	color:#ffc865;
+	text-align:justify;
 	font-size:2.0625rem;
 	font-weight:bold;
 	padding-bottom:3rem;
@@ -66,9 +71,11 @@ footer div{
 	text-align:center;
 	line-height:5.375rem;
 	font-size:2.5rem;
+		cursor:pointer;
 }
 #play_againt {
 	background-color:#f66f6f;
+
 }
 #share {
 	background-color:#fbb435;
@@ -76,11 +83,19 @@ footer div{
 
 
 /*小图标*/
-.win {
+.killerwin {
 	display:inline-block;
 	background-size:contain;
 	vertical-align:middle;
 	background-image:url(../images/win.png);
+	width:21.875rem;
+	height:12.8125rem;
+}
+.policewin {
+	display:inline-block;
+	background-size:contain;
+	vertical-align:middle;
+	background-image:url(../images/win_1.png);
 	width:21.875rem;
 	height:12.8125rem;
 }

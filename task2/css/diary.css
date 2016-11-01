@@ -1,0 +1,138 @@
+#main{
+	background-color:#f0f0f0;
+	padding:2rem 0.5rem;
+	color:white;
+	min-height:65rem;
+	position:relative;
+}
+
+section {
+	background-color:white;
+	border:1px #c9c9c9 solid;
+	text-align:center;
+	margin-bottom:0.8125rem;
+	position:relative;
+}
+
+
+
+h2 {
+	color:#29bde0;
+	font-size:1.875rem;
+	font-weight:normal;
+	line-height:5.25rem;
+	border-bottom:1px #c9c9c9 solid;
+	position:relative;
+}
+
+.step {
+	overflow:hidden;
+}
+
+.left_bar {
+	height:50rem;
+	width:10%;
+	box-sizing:border-box;
+	border-right:2px #c9c9c9 solid;
+	float:left;
+	position:relative;
+}
+.right_bar {
+	float:left;
+	width:90%;
+}
+
+ul {
+	width:80%;
+	margin:auto;
+	padding-top:3.125rem;
+}
+ul li {
+	list-style:none;
+	color:white;
+	line-height:4.75rem;
+	background-color:#29bde0;
+	margin-bottom:1.25rem;
+	font-size:1.875rem;
+	cursor:pointer;
+	position:relative;
+}
+
+.results {
+	min-height:5rem;
+	color:#c9c9c9;
+	font-size:1.5rem;
+	padding:2rem;
+	text-align:left;
+}
+
+
+
+
+
+
+
+/*Ð¡Í¼±ê*/
+.moon , .sun {
+	height:3.75rem;
+	width:3.75rem;
+	border-radius:1.875rem;
+	border:2px #c9c9c9 solid;
+	background-color:white;
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+	position:absolute;
+	right:-1.875rem;
+}
+.moon {
+	background-image:url("../images/moon.png");
+	top:3.625rem;
+}
+.sun {
+	background-image:url("../images/sun.png");
+	top:30.75rem;
+}
+.right_tri {
+	width:0;
+	height:0;
+	border:solid transparent;
+	border-width:0.75rem 1rem;
+	border-right-color:#29bde0;
+	position:absolute;
+	top:1.625rem;
+	left:-2rem;
+}
+.top_tri {
+	width:0;
+	height:0;
+	border: solid transparent;
+	border-width:0.8rem 1.1rem;
+	border-bottom-color:#c9c9c9;
+	position:absolute;
+	top:-1.6rem;
+	left:50%;
+	margin-left:-1.1rem;
+}
+.top_tri_white {
+	width:0;
+	height:0;
+	border: solid transparent;
+	border-width:0.75rem 1rem;
+	border-bottom-color:white;
+	position:absolute;
+	top:-1.4rem;
+	left:50%;
+	margin-left:-1rem;
+}
+.down {
+	display:inline-block;
+	background-image:url("../images/pgdn.png");
+	background-size:contain;
+	width:1.875rem;
+	height:1.0625rem;
+	vertical-align:middle;
+	position:absolute;
+	top:2rem;
+	right:2rem;
+	cursor:pointer;
+}
