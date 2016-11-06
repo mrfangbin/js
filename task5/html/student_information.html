@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>详细信息</title>
+	<meta name="viewport" content="width=device-width, intial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes"/>
+	<link rel="stylesheet" type="text/css" href="../css/student_reg.css">
+	<script type="text/javascript" src="../script/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="../script/student_info.js"></script>
+</head>
+<body>
+	<div id="main">
+		<a href="student_list.html">返回&gt;&gt;</a>
+		<div id="info">
+			<div class="row">
+				<span>姓名：</span><span id="myname">CDYL</span>
+			</div>
+			<div class="row">
+				<span>QQ:</span><span id="myqq">50409266</span>
+			</div>
+			<div class="row">
+				<span>修真类型：</span><span id="mytype">JAVA</span>
+			</div>
+			<div class="row">
+				<span>毕业院校：</span><span id="myschool">北京天天蓝大学天天玩技术学院</span>
+			</div>
+			<div class="row">
+				<span>资质：</span><span id="mytalent">学霸</span>
+			</div>
+			<div class="row">
+				<span>修行等级：</span><span id="mylevel">0基础</span>
+			</div>		
+			<div class="row">
+				<span>预计入学时间：</span><span id="myjoinTime">2016年11月2日</span>
+			</div>
+			<div class="row">
+				<span>修行立愿：</span><span id="mywish">如果我不能在IT特训营拼尽全力，为自己以后的修行路上打好基础，就让我变胖2斤！</span>
+			</div>
+		<button type="button">编辑</button>
+		<button id="delete" type="button">删除</button>
+		</div>
+
+		<form>
+			<div class="row">
+				<label for="name">姓名：</label><input type="text" name="name" id="name" required="required">
+			</div>
+			<div class="row">
+				<label for="qq">QQ:</label><input type="text" name="qq" id="qq" required="required">
+			</div>
+			<div class="row">
+				<label>修真类型：</label>
+				<input type="radio" 	 value="1" id="css" required="required"><label for="css">CSS</label>
+				<input type="radio" name="type" value="2" id="js"><label for="js">JS</label>
+				<input type="radio" name="type" value="3" id="java"><label for="java">JAVA</label>
+				<input type="radio" name="type" value="4" id="om"><label for="om">运维</label>
+				<input type="radio" name="type" value="5" id="bda"><label for="bda">DBA</label>
+				<input type="radio" name="type" value="6" id="pd"><label for="pd">产品</label>
+				<input type="radio" name="type" value="7" id="ios"><label for="ios">IOS</label>
+				<input type="radio" name="type" value="8" id="android"><label for="android">ANDROID</label>
+			</div>
+			<div class="row">
+				<label for="school">毕业院校：</label><input type="text" name="school" id="school" required="required">
+			</div>
+			<div class="row">
+				<label>资质：</label>
+				<input type="radio" value="1" id="best" name="talent" required="required"><label for="best">学霸</label>
+				<input type="radio" value="2" id="normal" name="talent"><label for="normal">学渣</label>
+			</div>
+			<div class="row">
+				<label>修行等级：</label>
+				<input type="radio" name="level" value="1" id="level_1" required="required"><label for="level_1">0基础</label>
+				<input type="radio" name="level" value="2" id="level_2"><label for="level_2">修行3个月以内</label>
+				<input type="radio" name="level" value="3" id="level_3"><label for="level_3">修行6个月以内</label>
+				<input type="radio" name="level" value="4" id="level_4"><label for="level_4">修行1年以内</label>
+				<input type="radio" name="level" value="5" id="level_5"><label for="level_5">修行3年以内</label>
+				<input type="radio" name="level" value="6" id="level_6"><label for="level_6">修行3年以上</label>
+			</div>		
+			<div class="row">
+				<label for="joinTime">预计入学时间：</label><input type="date" name="joinTime" id="joinTime" required="required">
+			</div>
+			<div class="row">
+				<label for="wish">修行立愿：</label><textarea name="wish" id="wish" rows="5"></textarea>
+			</div>
+		<button type="submit">确认</button>
+		<button type="button">取消</button>
+		</form>
+
+	</div>
+</body>
+</html>

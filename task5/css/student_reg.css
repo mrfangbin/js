@@ -1,0 +1,53 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+#main {
+	margin: auto;
+	border: 1px solid #aaa;
+	width: 60rem;
+	padding: 2rem 0 0 1rem;
+}
+
+div.row {
+	margin: 1rem 0;
+}
+div.row label:first-child ,div.row span:first-child {
+	display: inline-block;
+	width: 8rem;
+}
+input[type="radio"]+label {
+	display: inline-block;
+	padding: 0 0.5rem;
+	min-width: 3.5rem;
+}
+
+input[type="text"] , textarea {
+	width: 50rem;
+	padding: 0.25rem 0;
+}
+textarea {
+	vertical-align: top;
+}
+button {
+	width: 6rem;
+	margin: 5rem 0;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	text-align: center;
+	border: 1px #aaa solid;
+	border-radius: 0.25rem;
+	background-color: transparent;
+}
+
+#mywish {
+	display: inline-block;
+	height: 5rem;
+	width: 50rem;
+	vertical-align: top;
+}
+a {
+	float: right;
+	display: block;
+	padding: 2rem;
+}
